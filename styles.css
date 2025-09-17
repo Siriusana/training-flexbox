@@ -7,13 +7,48 @@
 html, body {
     height: 100%;
     font-family: sans-serif;
-    color: #333;
 }
 
 .app-container {
-    display: flex; 
+    display: flex;
     flex-direction: column; 
-    min-height: 100vh; 
+    min-height: 100vh;     
+}
+
+.content-wrapper {
+    display: flex;          
+    flex-direction: row;    
+    flex-grow: 1;         
+}
+
+.main-content {
+    flex: 2; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto; 
+}
+
+.gallery-container {
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: flex-start;
+    padding: 10px;
+    background-color: #f0f4f8;
+    border-left: 1px solid #ccc;
+}
+
+.item {
+    flex-basis: 120px; 
+    flex-grow: 1;      
+    margin: 5px;
+    height: 80px;      
+    background-color: #4a90e2;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
@@ -21,13 +56,6 @@ html, body {
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-.main-content {
-    flex-grow: 1; 
-    padding: 20px;
-    background-color: #f9f9f9;
-    overflow-y: auto; 
 }
 
 .footer {

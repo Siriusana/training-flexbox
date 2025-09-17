@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Flexbox</title>
+    <title>Flexbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="app-container">
         <header class="header">
-            <h1>Cabeçalho</h1>
+            <h1> Flexbox</h1>
         </header>
 
-        <main class="main-content">
-            <h2>Corpo Principal</h2>
-            <p>Preencher o espaço disponível.</p>
-            <p>Role para baixo</p>
-            <div style="height: 800px; background-color: #71a5b9; border-radius: 8px;"></div>
-        </main>
+        <div class="content-wrapper">
+            <main class="main-content">
+                <h2>Tipos</h2>
+                <p><strong>Flex</strong> Wrap, Grow, Shrink, Basis</p>
+            </main>
+
+            <aside class="gallery-container">
+                <div class="item">flex-wrap 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </aside>
+        </div>
 
         <footer class="footer">
-            <p>Rodapé © 2025</p>
+            <p>Rodapé Fixo © 2025</p>
         </footer>
     </div>
+
 </body>
 </html>
